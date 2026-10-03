@@ -1,0 +1,51 @@
+[
+  {
+    "id": 7,
+    "name": "arsam",
+    "email": "arsamkalhor52@gmail.com",
+    "role": "Manager",
+    "status": "Active"
+  },
+  {
+    "id": 1,
+    "name": "Emma Wilson",
+    "email": "emma.wilson@example.com",
+    "role": "Admin",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Liam Carter",
+    "email": "liam.carter@example.com",
+    "role": "Editor",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Olivia Martin",
+    "email": "olivia.martin@example.com",
+    "role": "Viewer",
+    "status": "Pending"
+  },
+  {
+    "id": 4,
+    "name": "Noah Anderson",
+    "email": "noah.anderson@example.com",
+    "role": "Editor",
+    "status": "Inactive"
+  },
+  {
+    "id": 5,
+    "name": "Sophia Brown",
+    "email": "sophia.brown@example.com",
+    "role": "Manager",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Ethan Davis",
+    "email": "ethan.davis@example.com",
+    "role": "Viewer",
+    "status": "Suspended"
+  }
+]
