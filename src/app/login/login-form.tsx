@@ -1,12 +1,15 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Eye, EyeOff } from "lucide-react";
 
-export function LoginForm() {
+function LoginFormContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+
   const [email, setEmail] = useState("admin@test.com");
   const [password, setPassword] = useState("12345678");
   const [showPassword, setShowPassword] = useState(false);
@@ -28,7 +31,7 @@ export function LoginForm() {
       setError("Invalid email or password");
       setIsLoading(false);
     } else {
-      router.push("/dashboard");
+      router.push(callbackUrl);
       router.refresh();
     }
   }
@@ -77,7 +80,6 @@ export function LoginForm() {
       <div className="flex items-center justify-between mt-2">
         <label className="flex items-center gap-2 cursor-pointer group">
           <div className="w-4 h-4 border border-[#333333] rounded-[4px] bg-[#1A1A1A] group-hover:border-white/40 transition-colors flex items-center justify-center">
-            {/* Add a checkmark here if checked, but keeping it simple for now */}
           </div>
           <span className="text-[#888888] text-sm group-hover:text-white transition-colors">
             Remember me
@@ -108,5 +110,13 @@ export function LoginForm() {
         Secure admin access
       </div>
     </form>
+  );
+}
+
+export function LoginForm() {
+  return (
+    <Suspense fallback={<div className="mt-8 text-center text-[#888888] text-sm">Loading...</div>}>
+      <LoginFormContent />
+    </Suspense>
   );
 }
