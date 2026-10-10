@@ -1,6 +1,6 @@
-// import AppSidebar from "@/components/AppSidebar";
+import AppSidebar from "@/components/AppSidebar";
 import Header from "@/components/Header";
-// import SidebarResizable from "@/components/SidebarResizable";
+import SidebarResizable from "@/components/SidebarResizable";
 
 import {
   SidebarInset,
@@ -14,9 +14,9 @@ export default function Layout({
 }>) {
   return (
     <SidebarProvider>
-      {/* <SidebarResizable>
+      <SidebarResizable>
         <AppSidebar />
-      </SidebarResizable> */}
+      </SidebarResizable>
 
       <SidebarInset>
         <Header />

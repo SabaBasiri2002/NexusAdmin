@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Pro 14",
+    "price": 1999,
+    "stock": 18,
+    "status": "Active",
+    "category": "Computers"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 16 Pro",
+    "price": 1099,
+    "stock": 34,
+    "status": "Active",
+    "category": "Phones"
+  },
+  {
+    "id": 3,
+    "name": "AirPods Pro",
+    "price": 249,
+    "stock": 56,
+    "status": "Active",
+    "category": "Audio"
+  },
+  {
+    "id": 4,
+    "name": "Apple Watch Ultra 2",
+    "price": 799,
+    "stock": 9,
+    "status": "Active",
+    "category": "Wearables"
+  },
+  {
+    "id": 5,
+    "name": "iPad Pro 13",
+    "price": 1299,
+    "stock": 14,
+    "status": "Active",
+    "category": "Tablets"
+  },
+  {
+    "id": 6,
+    "name": "Studio Display",
+    "price": 1599,
+    "stock": 4,
+    "status": "Inactive",
+    "category": "Displays"
+  },
+  {
+    "id": 7,
+    "name": "Magic Keyboard",
+    "price": 199,
+    "stock": 27,
+    "status": "Active",
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Magic Mouse",
+    "price": 99,
+    "stock": 0,
+    "status": "Inactive",
+    "category": "Accessories"
+  },
+  {
+    "id": 9,
+    "name": "HomePod",
+    "price": 299,
+    "stock": 12,
+    "status": "Active",
+    "category": "Audio"
+  },
+  {
+    "id": 10,
+    "name": "Mac Mini",
+    "price": 599,
+    "stock": 21,
+    "status": "Active",
+    "category": "Computers"
+  },
+  {
+    "id": 11,
+    "name": "Mac Studio",
+    "price": 1999,
+    "stock": 6,
+    "status": "Active",
+    "category": "Computers"
+  },
+  {
+    "id": 12,
+    "name": "Pro Display XDR",
+    "price": 4999,
+    "stock": 2,
+    "status": "Inactive",
+    "category": "Displays"
+  }
+]

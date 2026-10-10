@@ -1,18 +1,18 @@
 import { Suspense } from "react";
 import { LayoutDashboard, Sparkles } from "lucide-react";
 
-// import DashboardStats from "@/components/DashboardStats";
-// import DashboardStatsSkeleton from "@/components/DashboardStatsSkeleton";
+import DashboardStats from "@/components/DashboardStats";
+import DashboardStatsSkeleton from "@/components/DashboardStatsSkeleton";
 
-// import RecentProducts from "@/components/RecentProducts";
-// import RecentProductsSkeleton from "@/components/RecentProductsSkeleton";
+import RecentProducts from "@/components/RecentProducts";
+import RecentProductsSkeleton from "@/components/RecentProductsSkeleton";
 
-// import RecentUsers from "@/components/RecentUsers";
-// import RecentUsersSkeleton from "@/components/RecentUsersSkeleton";
+import RecentUsers from "@/components/RecentUsers";
+import RecentUsersSkeleton from "@/components/RecentUsersSkeleton";
 
 export default function DashboardPage() {
   return (
-    <main className="flex flex-col gap-6">
+    <main  className="flex flex-col gap-6">
       {/* Page Header */}
       <section className="relative overflow-hidden rounded-3xl border border-border/70 bg-card shadow-sm">
         <div data-scroll-parallax="18" className="pointer-events-none absolute -right-20 -top-32 size-80 rounded-full bg-sky-500/10 blur-3xl" />
@@ -44,33 +44,33 @@ export default function DashboardPage() {
       </section>
 
       {/* Stats */}
-      {/* <Suspense
+      <Suspense
         fallback={
           <DashboardStatsSkeleton />
         }
       >
         <DashboardStats />
-      </Suspense> */}
+      </Suspense>
 
       {/* Recent Activity */}
       <section className="grid items-start gap-6 xl:grid-cols-2">
         {/* Recent Products */}
-        {/* <Suspense
+        <Suspense
           fallback={
             <RecentProductsSkeleton />
           }
         >
           <RecentProducts />
-        </Suspense> */}
+        </Suspense>
 
         {/* Recent Users */}
-        {/* <Suspense
+        <Suspense
           fallback={
             <RecentUsersSkeleton />
           }
         >
           <RecentUsers />
-        </Suspense> */}
+        </Suspense>
       </section>
     </main>
   );
