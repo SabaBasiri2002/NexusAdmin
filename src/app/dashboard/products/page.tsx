@@ -239,11 +239,6 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
             <h2 className="text-lg font-semibold tracking-tight">
               All Products
             </h2>
-
-            <p className="mt-1 text-sm text-muted-foreground">
-              A complete overview of products
-              currently available in your catalog.
-            </p>
           </div>
 
           <div className="flex items-center gap-2 rounded-lg border bg-card px-3 py-2 text-xs text-muted-foreground">
