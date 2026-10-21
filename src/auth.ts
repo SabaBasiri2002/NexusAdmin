@@ -2,7 +2,7 @@ import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { authConfig } from "@/auth.config";
 
-const DJANGO_API_URL = process.env.DJANGO_API_URL || "http://127.0.0.1:8000";
+const DJANGO_API_URL = process.env.DJANGO_API_URL;
 
 // Helper: Decode the JWT expiration timestamp (exp)
 function getJwtExp(token: string): number {
