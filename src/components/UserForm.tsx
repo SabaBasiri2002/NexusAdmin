@@ -24,7 +24,7 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
+  SelectValue,  
 } from "@/components/ui/select";
 import { Spinner } from "@/components/ui/spinner";
 import type { User } from "@/types/user";
@@ -78,7 +78,7 @@ export default function UserForm({
     key: Key,
     value: UserFormValues[Key],
   ) => {
-    setValues((currentValues) => ({
+    setValues((currentValues: any) => ({
       ...currentValues,
       [key]: value,
     }));
@@ -170,6 +170,8 @@ export default function UserForm({
               <SelectItem value="admin">Admin</SelectItem>
               <SelectItem value="manager">Manager</SelectItem>
               <SelectItem value="user">User</SelectItem>
+              <SelectItem value="user">Editor</SelectItem>
+              <SelectItem value="user">Viewer</SelectItem>
             </SelectContent>
           </Select>
           <FieldError errors={state.errors?.role} />

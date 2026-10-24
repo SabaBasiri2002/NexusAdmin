@@ -35,8 +35,8 @@ async function refreshAccessToken(token: any) {
       ...token,
       accessToken: refreshedTokens.access,
       accessTokenExpires: getJwtExp(refreshedTokens.access),
-      // If your Django SimpleJWT has ROTATE_REFRESH_TOKENS=True:
-      refreshToken: refreshedTokens.refresh ?? token.refreshToken,
+      // // If your Django SimpleJWT has ROTATE_REFRESH_TOKENS=True:
+      // refreshToken: refreshedTokens.refresh ?? token.refreshToken,
     };
   } catch (error) {
     console.error("Failed to refresh Django access token:", error);
