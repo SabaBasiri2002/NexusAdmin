@@ -9,24 +9,24 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A] flex w-full text-white selection:bg-white/20">
+    <div className="min-h-screen bg-zinc-950 flex w-full text-white selection:bg-emerald-500/30">
       {/* Left Pane - Branding & Info */}
       <div className="hidden lg:flex flex-col justify-between w-1/2 p-12 relative overflow-hidden border-r border-white/5">
         {/* Subtle Background Glow */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="relative z-10">
           {/* Logo */}
           <div className="flex items-center gap-3 mb-16">
-            <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
-              <div className="w-7 h-7 bg-[#0A0A0A] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/20">
+              <div className="w-7 h-7 bg-zinc-950 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg leading-none">D</span>
               </div>
             </div>
             <div>
               <h1 className="font-semibold text-lg leading-tight">Dashora</h1>
-              <p className="text-[#888888] text-xs">Management Platform</p>
+              <p className="text-zinc-400 text-xs">Management Platform</p>
             </div>
           </div>
 
@@ -83,9 +83,17 @@ export default function LoginPage() {
       {/* Right Pane - Form */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-8 sm:p-12 relative">
         <div className="w-full max-w-[420px] relative z-10">
+          <div className="flex lg:hidden items-center gap-3 mb-8">
+            <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+              <div className="w-5 h-5 bg-zinc-950 rounded-md flex items-center justify-center">
+                <span className="text-white font-bold text-sm leading-none">D</span>
+              </div>
+            </div>
+            <h1 className="font-semibold text-2xl text-white">Dashora</h1>
+          </div>
           <div className="mb-8">
             <p className="text-[#888888] text-sm mb-2 font-medium">Welcome back</p>
-            <h2 className="text-3xl font-semibold text-white tracking-tight mb-2">
+            <h2 className="lg:text-3xl text-2xl font-semibold text-white tracking-tight mb-2">
               Sign in to your account
             </h2>
             <p className="text-[#888888] text-sm">
