@@ -28,7 +28,7 @@ export default async function RecentProducts() {
     products.slice(0, 5);
 
   return (
-    <Card data-scroll-reveal="card" className="overflow-hidden border-border/70 shadow-sm">
+    <Card data-scroll-reveal="card" className="overflow-hidden border-transparent! border-0 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl duration-300">
       <CardHeader className="flex flex-row items-center justify-between gap-4 border-b">
         <div>
           <CardTitle className="text-base font-semibold">
@@ -43,6 +43,7 @@ export default async function RecentProducts() {
 
         <Button
           variant="outline"
+          className="border-slate-200"
           size="sm"
           nativeButton={false}
           render={
